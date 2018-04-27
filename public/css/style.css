@@ -1,13 +1,22 @@
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9; }
+
 #navbar {
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 10; }
 
 #particles-js {
   flex-basis: 100%;
   height: 600px;
   display: flex;
+  position: relative;
   justify-content: center;
-  border: 1px solid black;
   background-color: blueviolet; }
   #particles-js .jumbotron {
     position: absolute;
@@ -17,6 +26,10 @@
     width: 80%;
     height: 40%;
     text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background: rgba(233, 236, 239, 0.3); }
     @media (min-width: 1200px) {
       #particles-js .jumbotron {
@@ -26,3 +39,27 @@
         width: 100%; } }
     #particles-js .jumbotron h1 {
       font-size: 5.5rem; }
+    #particles-js .jumbotron h3 {
+      font-size: 2.2em; }
+
+.fa-user {
+  font-size: 2em; }
+
+.navbar-collapse {
+  flex-grow: 0;
+  width: 50%; }
+  .navbar-collapse ul {
+    width: 100%;
+    justify-content: space-between; }
+
+.login {
+  display: none; }
+  @media (min-width: 768px) {
+    .login {
+      display: flex; } }
+
+.login-reverse {
+  display: flex; }
+  @media (min-width: 768px) {
+    .login-reverse {
+      display: none; } }
