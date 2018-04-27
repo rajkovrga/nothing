@@ -1,3 +1,6 @@
+body {
+  font-size: 16px; }
+
 canvas {
   position: absolute;
   left: 0;
@@ -72,6 +75,7 @@ canvas {
     .login-reverse {
       display: none; } }
 
+<<<<<<< HEAD
 #author-title {
   font-size: 3.8em;
   padding-bottom: 10px; }
@@ -120,3 +124,25 @@ canvas {
     top: -300px; }
   100% {
     top: 150px; } }
+=======
+#gallery .figure {
+  width: 100%; }
+
+#gallery img {
+  width: 100%;
+  height: 250px; }
+
+#footer {
+  background: rgba(0, 0, 0, 0.805);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center; }
+
+.social {
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out; }
+  .social:hover {
+    color: #6365eb; }
+>>>>>>> components
