@@ -1,3 +1,28 @@
 #navbar {
   position: sticky;
   top: 0; }
+
+#particles-js {
+  flex-basis: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: blueviolet; }
+  #particles-js .jumbotron {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -65%);
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    background: rgba(233, 236, 239, 0.3); }
+    @media (min-width: 1200px) {
+      #particles-js .jumbotron {
+        width: 60%; } }
+    @media (max-width: 580px) {
+      #particles-js .jumbotron {
+        width: 100%; } }
+    #particles-js .jumbotron h1 {
+      font-size: 5.5rem; }
