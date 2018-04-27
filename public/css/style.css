@@ -6,6 +6,13 @@ canvas {
   height: 100%;
   z-index: 9; }
 
+.title {
+  height: 300px;
+  width: 100%;
+  background: #6365eb; }
+  .title h1 {
+    margin: auto; }
+
 #navbar {
   position: sticky;
   top: 0;
@@ -17,7 +24,7 @@ canvas {
   display: flex;
   position: relative;
   justify-content: center;
-  background-color: blueviolet; }
+  background-color: #6365eb; }
   #particles-js .jumbotron {
     position: absolute;
     left: 50%;

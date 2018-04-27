@@ -14,61 +14,147 @@
 
 <body>
 
-        <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark justify-content-between">
-                <a class="navbar-brand" href="index.html">Information Technologies</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbar-menu">
-              <ul class="navbar-nav">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand" href="index.html">Information Technologies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Gallery</a>
+                    <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="register-login.html">Register/Login</a>
+                    <a class="nav-link" href="register-login.html">Register/Login</a>
                 </li>
                 <li class="nav-item  active">
-                  <a class="nav-link" href="history.html">History</a>
+                    <a class="nav-link" href="history.html">History</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="author.html">Author</a>
+                    <a class="nav-link" href="author.html">Author</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link login-reverse" ><xi class="fa fa-user"></xi></a>
-                  </li>
-              </ul>
+                    <a href="#" class="nav-link login-reverse">
+                        <xi class="fa fa-user"></xi>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="#">
+                <xi class="fa fa-user"></xi>
+            </a>
+        </div>
+    </nav>
+    <div class="title d-flex">
+        <h1 class="display-1">History</h1>
+    </div>
+    <div class="container mt-5">
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="true">History</a>
+            </li>
+            <li class="nav-item ml-5 mr-5">
+                <a class="nav-link" id="processing-tab" data-toggle="tab" href="#processing" role="tab" aria-controls="processing" aria-selected="false">Processing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="perspective-tab" data-toggle="tab" href="#perspective" role="tab" aria-controls="perspective" aria-selected="false">Perspective</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="history" role="tabpanel" aria-labelledby="history-tab">
+                <div class="row mb-5 mt-3">
+                    <div class="picture-history col-sm-4 d-flex mt-auto mb-auto text-center">
+                        <img class="w-100 mt-3" src="img/1.jpg" alt="Card image cap" />
+                    </div>
+                    <div class="col-sm-8">
+                        Devices have been used to aid computation for thousands of years, probably initially in the form of a tally stick.[8] The
+                        Antikythera mechanism, dating from about the beginning of the first century BC, is generally considered
+                        to be the earliest known mechanical analog computer, and the earliest known geared mechanism.[9]:279
+                        Comparable geared devices did not emerge in Europe until the 16th century,[citation needed][according
+                        to whom?] and it was not until 1645 that the first mechanical calculator capable of performing the
+                        four basic arithmetical operations was developed.[10]:3 Electronic computers, using either relays
+                        or valves, began to appear in the early 1940s. The electromechanical Zuse Z3, completed in 1941,
+                        was the world's first programmable computer, and by modern standards one of the first machines that
+                        could be considered a complete computing machine. Colossus, developed during the Second World War
+                        to decrypt German messages was the first electronic digital computer. Although it was programmable,
+                        it was not general-purpose, being designed to perform only a single task. It also lacked the ability
+                        to store its program in memory; programming was carried out using plugs and switches to alter the
+                        internal wiring.[11][page needed] The first recognisably modern electronic digital stored-program
+                        computer was the Manchester Small-Scale Experimental Machine (SSEM), which ran its first program
+                        on 21 June 1948.[12] The development of transistors in the late 1940s at Bell Laboratories allowed
+                        a new generation of computers to be designed with greatly reduced power consumption. The first commercially
+                        available stored-program computer, the Ferranti Mark I, contained 4050 valves and had a power consumption
+                        of 25 kilowatts. By comparison the first transistorised computer, developed at the University of
+                        Manchester and operational by November 1953, consumed only 150 watts in its final version.[13]
+                    </div>
+                </div>
             </div>
-            <div class="login">
-                <a href="#"><xi class="fa fa-user"></xi></a>
-              </div>
-          </nav>
+            <div class="tab-pane fade" id="processing" role="tabpanel" aria-labelledby="processing-tab">
 
-    <div class="container">
-        <h1 class="text-center display-2">History</h1>
-        <br>
-        <hr>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-              </div>
+                <div class="row mb-5 mt-3">
+                    <div class="picture-history col-sm-4 d-flex mt-auto mb-auto text-center">
+                        <img class="w-100 mt-3" src="img/1.jpg" alt="Card image cap" />
+                    </div>
+                    <div class="col-sm-8">
+                        Devices have been used to aid computation for thousands of years, probably initially in the form of a tally stick.[8] The
+                        Antikythera mechanism, dating from about the beginning of the first century BC, is generally considered
+                        to be the earliest known mechanical analog computer, and the earliest known geared mechanism.[9]:279
+                        Comparable geared devices did not emerge in Europe until the 16th century,[citation needed][according
+                        to whom?] and it was not until 1645 that the first mechanical calculator capable of performing the
+                        four basic arithmetical operations was developed.[10]:3 Electronic computers, using either relays
+                        or valves, began to appear in the early 1940s. The electromechanical Zuse Z3, completed in 1941,
+                        was the world's first programmable computer, and by modern standards one of the first machines that
+                        could be considered a complete computing machine. Colossus, developed during the Second World War
+                        to decrypt German messages was the first electronic digital computer. Although it was programmable,
+                        it was not general-purpose, being designed to perform only a single task. It also lacked the ability
+                        to store its program in memory; programming was carried out using plugs and switches to alter the
+                        internal wiring.[11][page needed] The first recognisably modern electronic digital stored-program
+                        computer was the Manchester Small-Scale Experimental Machine (SSEM), which ran its first program
+                        on 21 June 1948.[12] The development of transistors in the late 1940s at Bell Laboratories allowed
+                        a new generation of computers to be designed with greatly reduced power consumption. The first commercially
+                        available stored-program computer, the Ferranti Mark I, contained 4050 valves and had a power consumption
+                        of 25 kilowatts. By comparison the first transistorised computer, developed at the University of
+                        Manchester and operational by November 1953, consumed only 150 watts in its final version.[13]
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="perspective" role="tabpanel" aria-labelledby="perspective-tab">
+
+                <div class="row mb-5 mt-3">
+                    <div class="picture-history col-sm-4 d-flex mt-auto mb-auto text-center">
+                        <img class="w-100 mt-3" src="img/1.jpg" alt="Card image cap" />
+                    </div>
+                    <div class="col-sm-8">
+                        Devices have been used to aid computation for thousands of years, probably initially in the form of a tally stick.[8] The
+                        Antikythera mechanism, dating from about the beginning of the first century BC, is generally considered
+                        to be the earliest known mechanical analog computer, and the earliest known geared mechanism.[9]:279
+                        Comparable geared devices did not emerge in Europe until the 16th century,[citation needed][according
+                        to whom?] and it was not until 1645 that the first mechanical calculator capable of performing the
+                        four basic arithmetical operations was developed.[10]:3 Electronic computers, using either relays
+                        or valves, began to appear in the early 1940s. The electromechanical Zuse Z3, completed in 1941,
+                        was the world's first programmable computer, and by modern standards one of the first machines that
+                        could be considered a complete computing machine. Colossus, developed during the Second World War
+                        to decrypt German messages was the first electronic digital computer. Although it was programmable,
+                        it was not general-purpose, being designed to perform only a single task. It also lacked the ability
+                        to store its program in memory; programming was carried out using plugs and switches to alter the
+                        internal wiring.[11][page needed] The first recognisably modern electronic digital stored-program
+                        computer was the Manchester Small-Scale Experimental Machine (SSEM), which ran its first program
+                        on 21 June 1948.[12] The development of transistors in the late 1940s at Bell Laboratories allowed
+                        a new generation of computers to be designed with greatly reduced power consumption. The first commercially
+                        available stored-program computer, the Ferranti Mark I, contained 4050 valves and had a power consumption
+                        of 25 kilowatts. By comparison the first transistorised computer, developed at the University of
+                        Manchester and operational by November 1953, consumed only 150 watts in its final version.[13]
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer ">
