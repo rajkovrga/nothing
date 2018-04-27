@@ -19,7 +19,8 @@ canvas {
 #navbar {
   position: sticky;
   top: 0;
-  z-index: 10; }
+  z-index: 10;
+  padding: 20px 45px; }
 
 #particles-js {
   flex-basis: 100%;
@@ -88,6 +89,17 @@ canvas {
   height: 100px;
   display: flex;
   align-items: center; }
+  #footer .col-3:first-child {
+    padding-top: 5px;
+    color: #fff;
+    font-size: 1.2rem; }
+    #footer .col-3:first-child a {
+      color: #fff;
+      font-size: 1.3rem;
+      transition: all 0.2s ease-in-out;
+      text-decoration: none; }
+      #footer .col-3:first-child a:hover {
+        color: #6365eb; }
 
 .social {
   color: #fff;

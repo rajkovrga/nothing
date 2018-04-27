@@ -4,6 +4,20 @@
     height: 100px;
     display: flex;
     align-items: center;
+    .col-3:first-child {
+        padding-top: 5px;
+        color: #fff;
+        font-size: 1.2rem;
+        a {
+            color: #fff;
+            font-size: 1.3rem;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
 }   
 .social {
     color: #fff;

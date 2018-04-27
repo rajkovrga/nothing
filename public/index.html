@@ -43,8 +43,21 @@
           </li>
       </ul>
     </div>
-    <div class="login">
-        <a href="#"><xi class="fa fa-user"></xi></a>
+    <div id="login-dropdown" class="dropdown login bg-dark">
+        <a class="dropdown-toggle" id="dropdown-button" data-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-user">
+          </i></a>
+        <div id="dropDownMenu" class="dropdown-menu bg-dark p-2 move">
+          <form action="" method="POST">
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <input type="password" name="pwd" class="form-control" placeholder="Password">
+              </div>
+              <input type="submit" value="Log in" class="btn btn-outline-success">
+          </form>
+        </div>
       </div>
   </nav>
 
@@ -203,7 +216,9 @@
   <footer id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-3"></div>
+        <div class="col-3">
+            &copy; 2018  <a href="author.html">Dijana Pejic</a> 
+        </div>
         <div class="col-3 offset-6">
           <ul class="nav">
             <li class="nav-item">
