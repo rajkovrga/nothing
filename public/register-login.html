@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In</title>
+    <link rel="icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="library/bootstrap.min.css">
+    <link rel="stylesheet" href="library/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg  fixed-top  navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Information Technologies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home
+                       
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="register-login.html">Register/Login
+                            <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="author.html">Author</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+            <div id="message" ></div>
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h1 class="text-center display-3">Register</h1>
+                <hr>
+                <form name="register">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Firstname</label>
+                        <input type="text" class="form-control" id="register-firstname"  placeholder="Enter firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Lastname</label>
+                        <input type="text" class="form-control" id="register-lastname"  placeholder="Enter lastname">
+                   
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="register-email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="register-password" placeholder="Password">
+                    </div>
+
+                    <button type="button" id="register-btn" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h1 class="text-center display-3">Login</h1>
+                <hr>
+                <form name="login">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+
+                    <button type="button" id="login-btn" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer ">
+        <div class="container">
+            <span class="text-muted">&copy; 2018 Dijana Pejic.</span>
+        </div>
+    </footer>
+
+
+    <script src="library/popper.min.js"></script>
+    <script src="library/jquery.min.js"></script>
+    <script src="library/bootstrap.min.js"></script>
+    <script src="public/javascripts/particles.js"></script>
+    <script src="public/javascripts/app.js"></script>
+    <script src="public/javascripts/main.js"></script>
+</body>
+
+</html>
