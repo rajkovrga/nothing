@@ -71,3 +71,12 @@ canvas {
   @media (min-width: 768px) {
     .login-reverse {
       display: none; } }
+
+#author-title {
+  font-size: 3.8em; }
+
+#author-text {
+  font-size: 1.2em;
+  border: 1px solid black;
+  padding: 20px 10px;
+  border-radius: 10px; }
