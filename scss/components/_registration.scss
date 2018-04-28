@@ -1,30 +1,50 @@
+$color: #575757;
 #register-body {
-    background-color: #e4e4e4; 
+    background: url('../img/register.jpeg') no-repeat center top;
+    background-attachment: fixed;
+    background-size: cover; 
 }
 #registration {
   margin-top: 180px;
-  background-color:#fff;
+  background-color: rgba(#fff, 0.5);
   padding: 20px;
+  box-shadow: 2px 3px 10px darken($color, 20%);
 }
-$color: #808080;
  #user {
   width: 130px;
   height: 130px;
   border-radius: 50%;
   text-align: center;
   position: absolute;
+  z-index: 5;
   display: flex;
   left: 50%;
   top: -300px;
   transform: translateX(-50%);
+  border: 1px solid $color; 
+  transition: all 0.2s ease-in-out;
   align-items: center;
   justify-content: center;
+  box-shadow: 3px 5px 20px $color;
   background: #fff;
+  &:hover {
+      box-shadow: 3px 5px 50px $color;
+  }
   .fa-user {
     color: $color;
     font-size: 3rem;    
     display: flex;
   }
+}
+.btn-outline-register {
+    color: darken($color, 15%);
+    background: transparent;
+    border: 1px solid darken($color, 15%);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: #fff;
+        background: darken($color, 15%);
+    }
 }
 .animation {
     animation-name: down;

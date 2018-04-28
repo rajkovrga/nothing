@@ -7,5 +7,40 @@
     
 }
 .move {
-    transform: translate(-150%, 10%) !important; 
+    border: 0;
+    @media(min-width: 768px)  {
+        transform: translate(-90%, 18%) !important; 
+        //border: 1px solid #343a40;
+        //padding-top: 10px;
+        width: 400px; 
+        margin: 0 auto;
+    }
+    width: 70%;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        border-style: solid;
+        height: 0;
+        border-color: transparent transparent #343a40;
+        border-width: 0 (30px / 2) 20px; 
+        top: -19px;
+        right: 10px;
+    }
+    input[type="email"],input[type="password"], input[type="text"] {
+        box-shadow: none;
+        border: none;
+        background: rgb(14, 14, 14);
+        color: #fff;
+        &:hover, &:focus {
+            outline: none;
+            outline-width: 0;
+            outline-color: transparent;
+            background: rgb(10, 10, 10);
+            
+        }
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #fff;
+        }
+    }
 }

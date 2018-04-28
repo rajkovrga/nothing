@@ -17,6 +17,12 @@ canvas {
         margin: auto;
     }
 }
+.display-2 {
+    @media(max-width: 580px) {
+        font-size: 3rem;
+    }
+}
+
 #navbar {
     position: sticky;
     top: 0;

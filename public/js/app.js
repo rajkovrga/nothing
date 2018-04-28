@@ -131,5 +131,17 @@ particlesJS('particles-js',
   }
 
 );
+$(window).resize(function() {
+  let navbar = $('.navbar-brand');
+  if($(window).width() < 450) {
+    navbar.html("I  T");
+    navbar.css("font-size", "3rem");
+
+  }else {
+    navbar.html("Information Technologies");
+    navbar.css("font-size", "1.5rem");
+  }
+});
+
 
 //Gallery

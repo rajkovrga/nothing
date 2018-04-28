@@ -16,6 +16,10 @@ canvas {
   .title h1 {
     margin: auto; }
 
+@media (max-width: 580px) {
+  .display-2 {
+    font-size: 3rem; } }
+
 #navbar {
   position: sticky;
   top: 0;
@@ -94,13 +98,51 @@ canvas {
   border-radius: 10px;
   background-color: rgba(220, 219, 221, 0.733); }
 
+#dropdown-login:hover {
+  background: transparent; }
+
+.move {
+  border: 0;
+  width: 70%; }
+  @media (min-width: 768px) {
+    .move {
+      transform: translate(-90%, 18%) !important;
+      width: 400px;
+      margin: 0 auto; } }
+  .move::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    border-style: solid;
+    height: 0;
+    border-color: transparent transparent #343a40;
+    border-width: 0 15px 20px;
+    top: -19px;
+    right: 10px; }
+  .move input[type="email"], .move input[type="password"], .move input[type="text"] {
+    box-shadow: none;
+    border: none;
+    background: #0e0e0e;
+    color: #fff; }
+    .move input[type="email"]:hover, .move input[type="email"]:focus, .move input[type="password"]:hover, .move input[type="password"]:focus, .move input[type="text"]:hover, .move input[type="text"]:focus {
+      outline: none;
+      outline-width: 0;
+      outline-color: transparent;
+      background: #0a0a0a; }
+    .move input[type="email"]::-webkit-input-placeholder, .move input[type="password"]::-webkit-input-placeholder, .move input[type="text"]::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #fff; }
+
 #register-body {
-  background-color: #e4e4e4; }
+  background: url("../img/register.jpeg") no-repeat center top;
+  background-attachment: fixed;
+  background-size: cover; }
 
 #registration {
   margin-top: 180px;
-  background-color: #fff;
-  padding: 20px; }
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  box-shadow: 2px 3px 10px #242424; }
 
 #user {
   width: 130px;
@@ -108,17 +150,32 @@ canvas {
   border-radius: 50%;
   text-align: center;
   position: absolute;
+  z-index: 5;
   display: flex;
   left: 50%;
   top: -300px;
   transform: translateX(-50%);
+  border: 1px solid #575757;
+  transition: all 0.2s ease-in-out;
   align-items: center;
   justify-content: center;
+  box-shadow: 3px 5px 20px #575757;
   background: #fff; }
+  #user:hover {
+    box-shadow: 3px 5px 50px #575757; }
   #user .fa-user {
-    color: #808080;
+    color: #575757;
     font-size: 3rem;
     display: flex; }
+
+.btn-outline-register {
+  color: #313131;
+  background: transparent;
+  border: 1px solid #313131;
+  transition: all 0.2s ease-in-out; }
+  .btn-outline-register:hover {
+    color: #fff;
+    background: #313131; }
 
 .animation {
   animation-name: down;
