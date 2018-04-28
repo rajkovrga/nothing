@@ -24,30 +24,60 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="index.html">Home
-            <span class="sr-only">(current)</span>
+           
           </a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="gallery.html">Gallery</a>
         </li>
-      
+
         <li class="nav-item">
           <a class="nav-link" href="history.html">History</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="author.html">Author</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link login-reverse">
-            <xi class="fa fa-user"></xi>
+        <li class="nav-item dropdown bg-dark">
+          <a class="dropdown-toggle login-reverse" id="dropdown-button" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-user">
+            </i>
           </a>
+          <div id="dropDownMenu" class="dropdown-menu bg-dark p-2 move">
+            <form action="" method="POST">
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="E-mail">
+              </div>
+              <div class="form-group">
+                <input type="password" name="pwd" class="form-control" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <a href="register.html" class="btn btn-link">Don't have account???</a>
+              </div>
+              <input type="submit" value="Log in" class="btn btn-outline-light">
+            </form>
+          </div>
         </li>
       </ul>
     </div>
-    <div class="login">
-      <a href="#">
-        <xi class="fa fa-user"></xi>
+    <div id="login-dropdown" class="dropdown login bg-dark">
+      <a class="dropdown-toggle" id="dropdown-button" data-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-user">
+        </i>
       </a>
+      <div id="dropDownMenu" class="dropdown-menu bg-dark p-2 move">
+        <form action="" method="POST">
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="E-mail">
+          </div>
+          <div class="form-group">
+            <input type="password" name="pwd" class="form-control" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <a href="register.html" class="btn btn-link">Don't have account???</a>
+          </div>
+          <input type="submit" value="Log in" class="btn btn-outline-light">
+        </form>
+      </div>
     </div>
   </nav>
   <div class="title d-flex">
@@ -93,11 +123,12 @@
   <footer id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-3">
-            &copy; 2018  <a href="author.html">Dijana Pejic</a> 
+        <div class="col-12 text-center col-sm-4">
+          &copy; 2018
+          <a href="author.html">Dijana Pejic</a>
         </div>
-        <div class="col-3 offset-6">
-          <ul class="nav">
+        <div class="col-12 col-sm-6 offset-sm-2">
+          <ul class="nav justify-content-center">
             <li class="nav-item">
               <a href="www.facebook.com" class="nav-link">
                 <i class="fa fa-facebook social"></i>
@@ -127,9 +158,8 @@
   <script src="library/popper.min.js"></script>
   <script src="library/jquery.min.js"></script>
   <script src="library/bootstrap.min.js"></script>
-  <script src="public/javascripts/particles.js"></script>
-  <script src="public/javascripts/app.js"></script>
-  <script src="public/javascripts/main.js"></script>
+  
+  <script src="js/app.js"></script>
 </body>
 
 </html>

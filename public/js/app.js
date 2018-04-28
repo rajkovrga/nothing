@@ -1,15 +1,5 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
 
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
+if(location.pathname=='/index.html' || location.pathname == '/')
 
 particlesJS('particles-js',
 
@@ -131,7 +121,21 @@ particlesJS('particles-js',
   }
 
 );
+
+
+$(document).ready(function(){
+  let navbar = $('.navbar-brand');
+  if($(window).width() < 450) {
+    navbar.html("I  T");
+    navbar.css("font-size", "3rem");
+
+  }else {
+    navbar.html("Information Technologies");
+    navbar.css("font-size", "1.5rem");
+  }
+});
 $(window).resize(function() {
+  
   let navbar = $('.navbar-brand');
   if($(window).width() < 450) {
     navbar.html("I  T");
